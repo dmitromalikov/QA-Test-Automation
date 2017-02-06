@@ -1,0 +1,1 @@
+This entertainments class with attributes and methods.

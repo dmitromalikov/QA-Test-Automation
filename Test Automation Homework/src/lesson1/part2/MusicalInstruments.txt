@@ -1,0 +1,1 @@
+This class of musical instruments with attributes and methods.

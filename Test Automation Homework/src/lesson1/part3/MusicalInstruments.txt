@@ -1,0 +1,1 @@
+This inherits class of musical instruments with attributes and methods.

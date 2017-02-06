@@ -1,0 +1,10 @@
+V install Java
+V install Eclipse
+V install xMind
+V install Firefox
+V install FirePath extension
+V install Firebug
+V install Jing
+V install oCam
+V setup Git repository
+V install Team Viewer
