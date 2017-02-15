@@ -1,55 +1,124 @@
-
-public class TVs
+public class Tvs
 {
-private String model; // The name of the TV model
-private String manufacturer; // The name of the TV producer
-private int diagonal; // Diagonal TV screen
-private int supportsSMARTTV; // TV Support SMART TV
-private int screenResolution; // Screen resolution
-private int haveWiFi; // Have WiFi
-private String screenType; // screen Type
-private int manufacturerCountry; // Manufacturer country
-private String typeTVtuner; // Type TV tuner
-private int colour; // Colour
+private String model;
+private String manufacturer;
+private int diagonal;
+private String supportsSmartTv;
+private int screenResolution;
+private String haveWiFi;
+private String screenType;
+private String manufacturerCountry;
+private String typeTvTuner;
+private String colour;
 
-//Watching TV
-public void watchingTV(){
-	System.out.print("Watching TV");
+public static void main(String args[]){}
+
+Tvs(){
+	model="";
+	manufacturer="";
+	diagonal=0;
+	supportsSmartTv="";
+	screenResolution=0;
+	haveWiFi="";
+	screenType="";
+	manufacturerCountry="";
+	typeTvTuner="";
+	colour="";
 }
-//Watch SAT
-public void watchSAT(){
-	System.out.print("Watch SAT");
+
+Tvs(String model, String manufacturer, int diagonal, String supportsSmartTv, int screenResolution, String haveWiFi, String screenType, String manufacturerCountry, String typeTvTuner, String colour)
+{
+	this.model=model;
+	this.manufacturer=manufacturer;
+	this.diagonal=diagonal;
+	this.supportsSmartTv=supportsSmartTv;
+	this.screenResolution=screenResolution;
+	this.haveWiFi=haveWiFi;
+	this.screenType=screenType;
+	this.manufacturerCountry=manufacturerCountry;
+	this.typeTvTuner=typeTvTuner;
+	this.colour=colour;
 }
-//See Youtube
-public void seeYoutube(){
-	System.out.print("See Youtube");
+
+public void createObjects() {
+	Tvs t1 = new Tvs("B8797", "LG", 56, "Yes", 1920, "Yes", "O", "B", "C", "Grey");
+	Tvs t2 = new Tvs("N6764", "Samsung", 65, "No", 2040, "Yes", "D", "G", "A", "Black");
+	} 
+
+
+public void clearAllFields()
+{
+	model=null;
+	manufacturer=null;
+	diagonal=0;
+	supportsSmartTv=null;
+	screenResolution=0;
+	haveWiFi=null;
+	screenType=null;
+	manufacturerCountry=null;
+	typeTvTuner=null;
+	colour=null;
 }
-//Read webpage
-public void readWebpage(){
-	System.out.print("Read webpage");
+
+public void setModel(String newModel) {
+	model=newModel;
 }
-//Photos from the web
-public void photosWeb(){
-	System.out.print("Photos from the web");
+public String getModel() {
+	return model;
 }
-//Content from your phone
-public void contentFromPhone(){
-	System.out.print("Content from your phone");
+
+public void setManufacturer(String newManufacturer) {
+	manufacturer=newManufacturer;
 }
-//Listen to music
-public void listenMusic(){
-	System.out.print("Listen to music");
+public String getManufacturer() {
+	return manufacturer;
 }
-//Listen to the radio
-public void listenRadio(){
-	System.out.print("Listen to the radio");
+public void setDiagonal(int newDiagonal) {
+	diagonal=newDiagonal;
 }
-//Record TV
-public void recordTV(){
-	System.out.print("Record TV");
+public int getDiagonal() {
+	return diagonal;
 }
-//Alarm clock
-public void alarmClock(){
-	System.out.print("Alarm clock");
+public void setSupportsSmartTv(String newSupportsSmartTv) {
+	supportsSmartTv=newSupportsSmartTv;
+}
+public String getSupportsSmartTv() {
+	return supportsSmartTv;
+}
+public void setScreenResolution(int newScreenResolution) {
+	screenResolution=newScreenResolution;
+}
+public int getScreenResolution() {
+	return screenResolution;
+}
+public void setHaveWiFi(String newHaveWiFi) {
+	haveWiFi=newHaveWiFi;
+}
+public String getHaveWiFi() {
+	return haveWiFi;
+}
+public void setScreenType(String newScreenType) {
+	screenType=newScreenType;
+}
+public String getScreenType() {
+	return screenType;
+}
+public void setManufacturerCountry(String newManufacturerCountry) {
+	manufacturerCountry=newManufacturerCountry;
+}
+public String getManufacturerCountry() {
+	return manufacturerCountry;
+}
+public void setTypeTvTuner(String newTypeTvTuner) {
+	typeTvTuner=newTypeTvTuner;
+}
+public String getTypeTvTuner() {
+	return typeTvTuner;
+}
+public void setColour(String newColour) {
+	colour=newColour;
+}
+public String getColour() {
+	return colour;
 }
 }

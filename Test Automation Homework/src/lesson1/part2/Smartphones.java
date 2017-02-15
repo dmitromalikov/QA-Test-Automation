@@ -1,54 +1,122 @@
 public class Smartphones
 {
-private String model; // The name of the phone model
-private String manufacturer; // The name of the phone manufacturer
-private int diagonal; // Diagonal Screen Phone
-private int RAM; // RAM size phone
-private int battery; // Phone battery capacity
-private int resolutionMainCamera; // Resolution main camera phone
-private String operatingSystem; // Phone operating system
-private int numberOfCores; // Number of cores
-private String colour; // The color of the phone body
-private int resolutionFrontCamera; // Resolution front camera phone
+private String model;
+private String manufacturer;
+private int diagonal;
+private int ram;
+private int battery;
+private int resolutionMainCamera;
+private String operatingSystem;
+private int numberOfCores;
+private String colour;
+private int resolutionFrontCamera;
 
-//Call
-public void call(){
-	System.out.print("Call");
+public static void main(String args[]){}
+
+Smartphones(){
+	model="";
+	manufacturer="";
+	diagonal=0;
+	ram=0;
+	battery=0;
+	resolutionMainCamera=0;
+	operatingSystem="";
+	numberOfCores=0;
+	colour="";
+	resolutionFrontCamera=0;
 }
-//Take pictures
-public void takePictures(){
-	System.out.print("Take pictures");
+
+Smartphones(String model, String manufacturer, int diagonal, int ram, int battery, int resolutionMainCamera, String operatingSystem, int numberOfCores, String colour, int resolutionFrontCamera)
+{
+	this.model=model;
+	this.manufacturer=manufacturer;
+	this.diagonal=diagonal;
+	this.ram=ram;
+	this.battery=battery;
+	this.resolutionMainCamera=resolutionMainCamera;
+	this.operatingSystem=operatingSystem;
+	this.numberOfCores=numberOfCores;
+	this.colour=colour;
+	this.resolutionFrontCamera=resolutionFrontCamera;
 }
-//Shoot video
-public void shootVideo(){
-	System.out.print("Shoot video");
+
+public void createObjects() {
+	Smartphones s1 = new Smartphones("Nokia 3310", "Nokia", 1, 2, 3, 4, "OS", 1, "B", 2);
+	Smartphones s2 = new Smartphones("HTC 5632", "HTC", 2, 4, 2, 3, "Android", 1, "G", 5);
+	} 
+
+public void clearAllFields()
+{
+	model=null;
+	manufacturer=null;
+	diagonal=0;
+	ram=0;
+	battery=0;
+	resolutionMainCamera=0;
+	operatingSystem=null;
+	numberOfCores=0;
+	colour=null;
+	resolutionFrontCamera=0;
 }
-//Recording on tape
-public void recordingOnTape(){
-	System.out.print("Recording on tape");
+
+public void setModel(String newModel) {
+	model=newModel;
 }
-//Play games
-public void playGames(){
-	System.out.print("Play games");
+public String getModel() {
+	return model;
 }
-//Navigation
-public void navigation(){
-	System.out.print("Navigation");
+public void setManufacturer(String newManufacturer) {
+	manufacturer=newManufacturer;
 }
-//Organiser
-public void organiser(){
-	System.out.print("Organiser");
+public String getManufacturer() {
+	return manufacturer;
 }
-//Reminder
-public void reminder(){
-	System.out.print("Reminder");
+public void setDiagonal(int newDiagonal) {
+	diagonal=newDiagonal;
 }
-//Email
-public void email(){
-	System.out.print("Email");
+public int getDiagonal() {
+	return diagonal;
 }
-//Internet
-public void internet(){
-	System.out.print("Internet");
+public void setRam(int newRam) {
+	ram=newRam;
+}
+public int getRam() {
+	return ram;
+}
+public void setBattery(int newBattery) {
+	battery=newBattery;
+}
+public int getBattery() {
+	return battery;
+}
+public void setResolutionMainCamera(int newResolutionMainCamera) {
+	resolutionMainCamera=newResolutionMainCamera;
+}
+public int getResolutionMainCamera() {
+	return resolutionMainCamera;
+}
+public void setOperatingSystem(String newOperatingSystem) {
+	operatingSystem=newOperatingSystem;
+}
+public String getOperatingSystem() {
+	return operatingSystem;
+}
+public void setNumberOfCores(int newNumberOfCores) {
+	numberOfCores=newNumberOfCores;
+}
+public int getNumberOfCores() {
+	return numberOfCores;
+}
+public void setColour(String newColour) {
+	colour=newColour;
+}
+public String getColour() {
+	return colour;
+}
+public void setResolutionFrontCamera(int newResolutionFrontCamera) {
+	resolutionFrontCamera=newResolutionFrontCamera;
+}
+public int getResolutionFrontCamera() {
+	return resolutionFrontCamera;
 }
 }

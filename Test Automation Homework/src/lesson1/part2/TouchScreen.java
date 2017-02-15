@@ -1,54 +1,120 @@
 public class TouchScreen
 {
-private String handInGlove; // Reaction with the gloved hand
-private String conductiveObjects; // Pressing a conductive object
-private String notConductiveObject; // Pressing the subject of non-conductive
-private int strength; // The ability to measure the pressing force
-private String transparency; // Limiting transparency %
-private int accuracy; // Accuracy of work
-private String resource; // Resource million. Taps
-private String protection; // Protection against dirt and liquids
-private String resistance; // Resistance to shock
-private String multitouch; // multiple press
+private String handInGlove;
+private String conductiveObject;
+private String notConductiveObject;
+private int strength;
+private String transparency;
+private int accuracy;
+private String resource;
+private String protection;
+private String resistance;
+private String multitouch;
 
-//Press one finger
-public void press1(){
-	System.out.print("Press one finger");
+public static void main(String args[]){}
+
+TouchScreen(){
+	handInGlove="";
+	conductiveObject="";
+	notConductiveObject="";
+	strength=0;
+	transparency="";
+	accuracy=0;
+	protection="";
+	resistance="";
+	multitouch="";
 }
-//Press with two fingers
-public void press2(){
-	System.out.print("Press with two fingers");
+
+TouchScreen(String handInGlove, String conductiveObject, String notConductiveObject, int strength, String transparency, int accuracy, String protection, String resistance, String multitouch)
+{
+	this.handInGlove=handInGlove;
+	this.conductiveObject=conductiveObject;
+	this.notConductiveObject=notConductiveObject;
+	this.strength=strength;
+	this.transparency=transparency;
+	this.accuracy=accuracy;
+	this.protection=protection;
+	this.resistance=resistance;
+	this.multitouch=multitouch;
 }
-//Press three fingers
-public void press3(){
-	System.out.print("Press three fingers");
+
+public void createObjects() {
+	TouchScreen t1 = new TouchScreen("Yes", "KO", "BGHG", 2, "VVGF", 4, "OHBHGFGF", "B", "Yes");
+	TouchScreen t2 = new TouchScreen("No", "HMF", "HFDD", 4, "FFHGF", 3, "HGDFTRDT", "G", "Yes");
+	} 
+
+public void clearAllFields()
+{
+	handInGlove=null;
+	conductiveObject=null;
+	notConductiveObject=null;
+	strength=0;
+	transparency=null;
+	accuracy=0;
+	resource=null;
+	protection=null;
+	resistance=null;
+	multitouch=null;
 }
-//Press four fingers
-public void press4(){
-	System.out.print("Press four fingers");
+
+public void setHandInGlove(String newHandInGlove) {
+	handInGlove=newHandInGlove;
 }
-//Move up with your fingers
-public void moveUp(){
-	System.out.print("Move up with your fingers");
+public String getHandInGlove() {
+	return handInGlove;
 }
-//Move your fingers down
-public void moveDown(){
-	System.out.print("Move your fingers down");
+public void setConductiveObject(String newConductiveObject) {
+	conductiveObject=newConductiveObject;
 }
-//Pour water
-public void pourWater(){
-	System.out.print("Pour water");
+public String getConductiveObject() {
+	return conductiveObject;
 }
-//Sprinkle with mud
-public void sprinkle(){
-	System.out.print("Sprinkle with mud");
+public void setNotConductiveObject(String newNotConductiveObject) {
+	notConductiveObject=newNotConductiveObject;
 }
-//Punch on the screen
-public void bump(){
-	System.out.print("Punch on the screen");
+public String getNotConductiveObject() {
+	return notConductiveObject;
 }
-//To drop to the floor
-public void drop(){
-	System.out.print("To drop to the floor");
+public void setStrength(int newStrength) {
+	strength=newStrength;
+}
+public int getStrength() {
+	return strength;
+}
+public void setTransparency(String newTransparency) {
+	transparency=newTransparency;
+}
+public String getTransparency() {
+	return transparency;
+}
+public void setAccuracy(int newAccuracy) {
+	accuracy=newAccuracy;
+}
+public int getAccuracy() {
+	return accuracy;
+}
+public void setResource(String newResource) {
+	resource=newResource;
+}
+public String getResource() {
+	return resource;
+}
+public void setProtection(String newProtection) {
+	protection=newProtection;
+}
+public String getProtection() {
+	return protection;
+}
+public void setResistance(String newResistance) {
+	resistance=newResistance;
+}
+public String getResistance() {
+	return resistance;
+}
+public void setMultitouch(String newMultitouch) {
+	multitouch=newMultitouch;
+}
+public String getMultitouch() {
+	return multitouch;
 }
 }

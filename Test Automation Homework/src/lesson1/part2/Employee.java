@@ -1,56 +1,143 @@
 public class Employee
 {
-private String name; // Employee Name
-private String surname; // Name of officer
-private String middleName; // Middle employee
-private int dateOfBirth; // Born employee
-private String gender; // Gender employee
-private int startingDate; // Date-employment employee
-private String familyStatus; // Relationship employee
-private String education; // Education officer
-private String specialty; // Occupation employee
-private String position; // Position occupied by the staff member
-private String department; // The department in which the employee works
-private String address; // Address employee accommodation
+private String name;
+private String surname;
+private String middleName;
+private int dateOfBirth;
+private String gender;
+private int startingDate;
+private String familyStatus;
+private String education;
+private String specialty;
+private String position;
+private String department;
+private String address;
 
-//Accept an employee to work
-public void accept(){
-	System.out.print("Accept an employee to work");
+public static void main(String args[]){}
+
+Employee(){
+	name="";
+	surname="";
+	middleName="";
+	middleName="";
+	dateOfBirth=0;
+	gender="";
+	startingDate=0;
+	familyStatus="";
+	education="";
+	specialty="";
+	position="";
+	department="";
+	address="";
 }
-//Dismiss the employee from work
-public void dismiss(){
-	System.out.print("Dismiss the employee from work");
+
+Employee(String name, String surname, String middleName, int dateOfBirth, String gender, int startingDate, String familyStatus, String education, String specialty, String position, String department, String address)
+{
+	this.name=name;
+	this.surname=surname;
+	this.middleName=middleName;
+	this.dateOfBirth=dateOfBirth;
+	this.gender=gender;
+	this.startingDate=startingDate;
+	this.familyStatus=familyStatus;
+	this.education=education;
+	this.specialty=specialty;
+	this.position=position;
+	this.department=department;
+	this.address=address;
 }
-//Increase employee positions
-public void increase(){
-	System.out.print("Increase employee positions");
+
+public void createObjects() {
+	Employee e1 = new Employee("Petro", "Sidorov", "Alexandrovich", 011056, "male", 01012016, "single", "high", "engineer", "engineer", "E", "Kharkov");
+	Employee e2 = new Employee("Ivan", "Ivanov", "Petrovich", 011167, "male", 01010014, "single", "high", "engineer", "engineer", "D", "Kyiv");
+	} 
+
+
+public void clearAllFields()
+{
+	name=null;
+	surname=null;
+	middleName=null;
+	dateOfBirth=0;
+	gender=null;
+	startingDate=0;
+	familyStatus=null;
+	education=null;
+	specialty=null;
+	position=null;
+	department=null;
+	address=null;
 }
-//Primed employee
-public void primed(){
-	System.out.print("primed employee");
+public void setName(String newName) {
+	name=newName;
 }
-//Fine employee
-public void fine(){
-	System.out.print("Fine employee");
+public String getName() {
+	return name;
 }
-//An employee on sick leave
-public void sick(){
-	System.out.print("An employee on sick leave");
+public void setSurname(String newSurname) {
+	surname=newSurname;
 }
-//An employee on leave
-public void holiday(){
-	System.out.print("An employee on leave");
+public String getSurname() {
+	return surname;
 }
-//Employee day off
-public void dayOff(){
-	System.out.print("Employee day off");
+public void setMiddleName(String newMiddleName) {
+	middleName=newMiddleName;
 }
-//An employee working in a day off
-public void jobInDayOff(){
-	System.out.print("An employee working in a day off");
+public String getMiddleName() {
+	return middleName;
 }
-//Stake reprimand employee
-public void reprimand(){
-	System.out.print("Stake reprimand employee");
+public void setDateOfBirth(int newDateOfBirth) {
+	dateOfBirth=newDateOfBirth;
+}
+public int getDateOfBirth() {
+	return dateOfBirth;
+}
+public void setGender(String newGender) {
+	gender=newGender;
+}
+public String getGender() {
+	return gender;
+}
+public void setStartingDate(int newStartingDate) {
+	startingDate=newStartingDate;
+}
+public int getStartingDate() {
+	return startingDate;
+}
+public void setFamilyStatus(String newFamilyStatus) {
+	familyStatus=newFamilyStatus;
+}
+public String getFamilyStatus() {
+	return familyStatus;
+}
+public void setEducation(String newEducation) {
+	education=newEducation;
+}
+public String getEducation() {
+	return education;
+}
+public void setSpecialty(String newSpecialty) {
+	specialty=newSpecialty;
+}
+public String getSpecialty() {
+	return specialty;
+}
+public void setPosition(String newPosition) {
+	position=newPosition;
+}
+public String getPosition() {
+	return position;
+}
+public void setDepartment(String newDepartment) {
+	department=newDepartment;
+}
+public String getDepartment() {
+	return department;
+}
+public void setAddress(String newAddress) {
+	address=newAddress;
+}
+public String getAddress() {
+	return address;
 }
 }
