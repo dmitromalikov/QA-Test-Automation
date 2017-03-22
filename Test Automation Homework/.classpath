@@ -3,6 +3,7 @@
 	<classpathentry excluding="lesson1/part2/|lesson1/part3/" kind="src" path="src"/>
 	<classpathentry kind="src" path="src/lesson1/part2"/>
 	<classpathentry kind="src" path="src/lesson1/part3"/>
+	<classpathentry kind="src" path="lesson2"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

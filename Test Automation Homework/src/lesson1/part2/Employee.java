@@ -1,5 +1,6 @@
 public class Employee
 {
+private IdCard idCard;
 private String name;
 private String surname;
 private String middleName;
@@ -10,7 +11,7 @@ private String familyStatus;
 private String education;
 private String specialty;
 private String position;
-private String department;
+private Department department;
 private String address;
 
 public static void main(String args[]){}
@@ -52,7 +53,6 @@ public void createObjects() {
 	Employee e2 = new Employee("Ivan", "Ivanov", "Petrovich", 011167, "male", 01010014, "single", "high", "engineer", "engineer", "D", "Kyiv");
 	} 
 
-
 public void clearAllFields()
 {
 	name=null;
@@ -67,6 +67,12 @@ public void clearAllFields()
 	position=null;
 	department=null;
 	address=null;
+}
+public void setIdCard() {
+	idCard=newidCard;
+}
+public int getIdCard() {
+	return idCard;
 }
 public void setName(String newName) {
 	name=newName;
@@ -128,11 +134,11 @@ public void setPosition(String newPosition) {
 public String getPosition() {
 	return position;
 }
-public void setDepartment(String newDepartment) {
-	department=newDepartment;
+public void setDepartment(Department d) {
+    department = d;
 }
-public String getDepartment() {
-	return department;
+public Department getDepartment(){
+    return department;
 }
 public void setAddress(String newAddress) {
 	address=newAddress;
