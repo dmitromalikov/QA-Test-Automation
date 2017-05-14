@@ -1,4 +1,5 @@
 package preIntermediate;
+
 public class Task8 {
 	public static void main (String[] args){
 	long n1 = 1;
