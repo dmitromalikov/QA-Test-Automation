@@ -11,7 +11,7 @@ public class Task3 {
 		int b = in.nextInt();
 		boolean result=false;
 		int z = a+b;
-		if (a==21 || b==21 || z==21)
+		if (a==21 | b==21 | z==21)
 		{
 			result=true;
 		}

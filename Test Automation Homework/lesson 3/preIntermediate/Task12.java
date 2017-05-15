@@ -1,7 +1,6 @@
 package preIntermediate;
-
 import java.util.Scanner;
-public class Task5 {
+public class Task12 {
 	public static void main (String[] args){
 	Scanner in = new Scanner(System.in);
 	System.out.println("How many elements would you like to create an array of integers?");
@@ -12,13 +11,10 @@ public class Task5 {
 			int x = in.nextInt();
 			ar[i-1]=x;
 	}
-	boolean result = false;
-	for (int k=1; k<=ar.length; k++) {
-		if (ar[k-1] == 7 | ar[k-1] == 9) {
-		result = false;
-		}
-		else result = true;
-		}
-	System.out.println(result);
+	int sum = 0;
+	for (int num=0; num < ar.length; num++){
+		sum = sum + ar[num];
+	}
+	System.out.println("Sum of all elements = " + sum);
 }
 }

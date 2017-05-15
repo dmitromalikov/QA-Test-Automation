@@ -11,7 +11,7 @@ public class Task8 {
 		n3 = n1 + n2;
 		if ((n3 % 2) != 0) {
 			m = m + 1;
-			System.out.println(m + " " + n3);
+//			System.out.println(m + " " + n3);
 			sum = sum + n3;
 			}
 		n1 = n2;
