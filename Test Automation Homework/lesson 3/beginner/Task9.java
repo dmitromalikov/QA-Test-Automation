@@ -1,13 +1,14 @@
 package beginner;
-import java.util.Scanner;
+
 public class Task9 {
 	public static void main (String[] args){
-	Scanner in = new Scanner(System.in);
-	System.out.println("Please enter number a");
-	int a = in.nextInt();
-	System.out.println("Please enter number b");
-	int b = in.nextInt();
-	double c = (double)a/b;
+		int a = 8;
+		int b = 7;
+		double c = (double)a/b;
+	System.out.println("Create method which takes two integers (a and b), performs their division (a/b) and outputs accurate result\n"
+			+ "of division (this means the result should have a decimal part, if any)");
+	System.out.println("Integer a = " + a);
+	System.out.println("Integer b = " + b);
 	System.out.print("Accurate result of division a/b = " + c);
 	}
 }

@@ -1,25 +1,34 @@
 package beginner;
-import java.util.Scanner;
+
 public class Task4 {
-	public static void main (String[] args){
-	Scanner in = new Scanner(System.in);
-	System.out.println("How many elements would you like to create an array of integers?");
-	int n = in.nextInt();
-	int[] ar=new int[n];
-	for (int i=1; i<=n; i++) {
-			System.out.println("Please enter integer ¹" + i + " from " + n);
-			int x = in.nextInt();
-			ar[i-1]=x;
+		private static int number2;
+		public void showNewArray(int[] numbers){
+			for(int element: numbers)
+				System.out.print(element + " ");
+				System.out.println();
+			}
+		
+		public int searchNumber (int [] numbers, int n){
+		for (int i = 0; i < numbers.length; i++) {
+			if (numbers [i] == n) {
+			number2 = i + 1;
+			}
+			}
+		return number2;
 	}
-	System.out.println("Enter an integer to search in an array");
-	int numberToSearch = in.nextInt();
-	int y=0;
-	for (int i=1; i<=n; i++) {
-		if (ar[i-1] == numberToSearch) {
-		y=i-1;
-		System.out.println("The number in the array is found at number - " + y);
+			public static void main(String[] args) {
+			int n = 35;
+			int[] numbers = new int[]{9,7,11,35,81,56,34,93};
+		Task4 One = new Task4();
+		System.out.println("Given an array of integers. Create a method (program) which takes two arguments - this array and number \n"
+				+ "that you are looking for - and returns quantity of this number in the array.");
+		System.out.print("Initial array is ");
+		One.showNewArray(numbers);
+		System.out.println("Number to search = " + n);
+		if (One.searchNumber(numbers, n) == 0) {
+			System.out.println("This number is not present in the array");
 		}
+		else
+			System.out.println("The number in the array is found at number - " + One.searchNumber(numbers, n));
 		}
-	if (y==0) System.out.println("This number is not present in the array");
-}
-}
+	}

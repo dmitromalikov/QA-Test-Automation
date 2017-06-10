@@ -1,29 +1,42 @@
 package preIntermediate;
-import java.util.Scanner;
+
 public class Task7 {
-	public static void main (String[] args){
-	Scanner in = new Scanner(System.in);
-	System.out.println("How many elements would you like to create an array of integers?");
-	int n = in.nextInt();
-	int[] ar=new int[n];
-	for (int i=1; i<=n; i++) {
-			System.out.println("Please enter integer ¹" + i + " from " + n);
-			int x = in.nextInt();
-			ar[i-1]=x;
-	}
 	int max = 0;
 	int min = 999999999;
-	for (int i=1; i<=ar.length; i++){
-		if (ar[i-1] > max) {
-			max = ar[i-1];
+	
+	public void showArray(int[] ar){
+		for(int element : ar)
+			System.out.print(element + " ");
+			System.out.println();
+		 }
+	
+	public int minAr (int [] ar){
+		for (int i=1; i<=ar.length; i++){
+			if (ar[i-1] < min) {
+				min = ar[i-1];
+			}
 		}
-		if (ar[i-1] < min) {
-			min = ar[i-1];
+		return min;
+	}
+	public int maxAr (int [] ar){
+		for (int i=1; i<=ar.length; i++){
+			if (ar[i-1] > max) {
+				max = ar[i-1];
+			}
 		}
+		return max;
 	}
-	System.out.println("The maximum number in the array is - " + max);
-	System.out.println("The minimum number in the array is - " + min);
-	System.out.println("The maximum number multiplied by 2 is - " + max*2);
-	System.out.println("The minimum number multiplied by 2 is - " + min*2);
-	}
+	public static void main (String[] args){
+		System.out.println("Given an array of integers. Write a method which finds max and min elements\n"
+				+ "in it and multiplies them by 2");
+		int[] ar = new int[] {5,3,6,8,2,7,9,3,1,8};
+		Task7 One = new Task7();
+		System.out.println("Initial array of integers:");
+		One.showArray(ar);
+		System.out.println("The maximum number in the array is - " + One.maxAr(ar));
+		System.out.println("The minimum number in the array is - " + One.minAr(ar));
+		System.out.println("The maximum number multiplied by 2 is - " + One.maxAr(ar)*2);
+		System.out.println("The minimum number multiplied by 2 is - " + One.minAr(ar)*2);
+}
+
 }

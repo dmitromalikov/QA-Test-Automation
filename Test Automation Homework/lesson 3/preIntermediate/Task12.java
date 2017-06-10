@@ -1,20 +1,27 @@
 package preIntermediate;
-import java.util.Scanner;
+
+import beginner.Task1;
+
 public class Task12 {
+
+	int number = 100000121;
+	int sum;
+		public int sumNumber (int number) {
+			while (number != 0) {
+				sum = sum + number % 10;
+				number /= 10;
+			}
+			return sum;
+		}
+	
 	public static void main (String[] args){
-	Scanner in = new Scanner(System.in);
-	System.out.println("How many elements would you like to create an array of integers?");
-	int n = in.nextInt();
-	int[] ar=new int[n];
-	for (int i=1; i<=n; i++) {
-			System.out.println("Please enter integer ¹" + i + " from " + n);
-			int x = in.nextInt();
-			ar[i-1]=x;
+		int number = 100000121;
+		int sum;
+		System.out.println("Imagine that you have a special skill which allows to calculate amount of digits in any\n"
+				+ "integer positive number. For example, if number is 12345, amount=15. Write a method which check\n"
+				+ "your superpower for any hard-coded number.");
+		Task12 One = new Task12();
+		System.out.println("In number = " + number);
+		System.out.println("Amount = " + One.sumNumber(number));
 	}
-	int sum = 0;
-	for (int num=0; num < ar.length; num++){
-		sum = sum + ar[num];
-	}
-	System.out.println("Sum of all elements = " + sum);
-}
 }

@@ -1,24 +1,36 @@
 package preIntermediate;
 
-import java.util.Scanner;
 public class Task6 {
-	public static void main (String[] args){
-	Scanner in = new Scanner(System.in);
-	System.out.println("How many elements would you like to create an array of integers?");
-	int n = in.nextInt();
-	int[] ar=new int[n];
-	for (int i=1; i<=n; i++) {
-			System.out.println("Please enter integer ¹" + i + " from " + n);
-			int x = in.nextInt();
-			ar[i-1]=x;
+	private double sum;
+	
+	public void showArray(int[] ar){
+		for(int element : ar)
+			System.out.print(element + " ");
+			System.out.println();
+		 }
+	
+	public double sumAr (int [] ar){
+		for (int num = 0; num < ar.length; num++){
+			sum = sum + ar[num];
+			}
+		return sum;
 	}
-	double sum = 0;
-	for (int num=0; num < ar.length; num++){
-		sum = sum + ar[num];
-	}
-	System.out.println("Sum of all elements: " + sum);
+	
 	double average = 0;
-	average = sum / ar.length;
-	System.out.println("Arithmetic average of all elements: " + average);
+	public double avgAr (int [] ar){
+		average = sum / ar.length;
+		return average;
+	}
+	
+	public static void main (String[] args){
+		System.out.println("Given an array of integers. Write a method which calculates sum of all\n"
+				+ "elements and arithmetic average of them");
+		int[] ar = new int[] {5,3,6,8,2,7,9,3,1,8};
+		Task6 One = new Task6();
+		System.out.println("Initial array of integers:");
+		One.showArray(ar);
+		System.out.println("Sum of all elements: " + One.sumAr(ar));
+		System.out.println("Arithmetic average of all elements: " + One.avgAr(ar));
+		
 }
 }

@@ -1,24 +1,27 @@
 package beginner;
 
-import java.util.Scanner;
-
 public class Task7 {
-	public static void main (String[] args){
-	Scanner in = new Scanner(System.in);
-	System.out.println("How many elements would you like to create an array of integers?");
-	int n = in.nextInt();
-	int[] ar=new int[n];
-	for (int i=1; i<=ar.length; i++) {
-			System.out.println("Please enter integer ¹" + i + " from " + ar.length);
-			int x = in.nextInt();
-			ar[i-1]=x;
-	}
-	int max=0;
-	for (int i=1; i<=ar.length; i++){
-		if (ar[i-1] > max) {
-			max =ar[i-1];
+	int max;
+	public void showNewArray(int[] numbers){
+		for(int element: numbers)
+			System.out.print(element + " ");
+			System.out.println();
 		}
-	}
-	System.out.println("The maximum number in the array is - " + max);
-	}
+	
+	public int searchMax (int [] numbers){
+		for (int i = 0; i < numbers.length; i++){
+			if (numbers[i] > max) {
+				max = numbers[i];
+			}
+		}
+	return max;
+}
+public static void main(String[] args) {
+	int[] numbers = new int[]{9,7,11,35,81,56,34,93,132,76,54};
+	Task7 One = new Task7();
+	System.out.println("Given an array of integers. Find and print the max element in it.");
+	System.out.print("Initial array is ");
+	One.showNewArray(numbers);
+	System.out.println("The maximum number in the array is - " + One.searchMax(numbers));
+}
 }

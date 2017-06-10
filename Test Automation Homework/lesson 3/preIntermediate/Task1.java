@@ -2,17 +2,25 @@ package preIntermediate;
 
 import java.util.Scanner;
 public class Task1 {
-	public static void main (String[] args){
-	Scanner in = new Scanner(System.in);
-	System.out.println("Please enter wife's mood. Is it good? False or true.");
-	boolean sheSmile = in.nextBoolean();
-	System.out.println("Please enter husband's mood. Is it good? False or true.");
-	boolean heSmile = in.nextBoolean();
-	boolean visitCinema;
-	if (sheSmile == heSmile) {
-		visitCinema = true;
+	public static boolean visitCinema;
+	public boolean visitCinema (boolean sheSmile, boolean heSmile){
+		if (sheSmile == heSmile) {
+			return visitCinema = true;
+		}
+		else return visitCinema = false;
 	}
-	else visitCinema = false;
-	System.out.println("Visit cinema = " + visitCinema);
+	public static void main (String[] args){
+		System.out.println("A couple is going to go to the cinema. That's makes sense, if both of them have the same mood.\n"
+				+ "There are two boolean parameters heSmile and sheSmile which indicate if each is smiling or\n"
+				+ "not. Write a method which returns True if they're eventually going to go to the cinema, of False	otherwise:\n"
+				+ "visitCinema(true, true) -> true\n"
+				+ "visitCinema(false, false) -> true\n"
+				+ "visitCinema(true, false) -> false\n");
+	boolean sheSmile = true;
+	boolean heSmile = true;
+	System.out.println("Wife's mood is - " + sheSmile);
+	System.out.println("husband's mood is - " + heSmile);
+	Task1 One = new Task1();
+	System.out.println("Visit cinema = " + One.visitCinema(sheSmile, heSmile));
 }
 }
