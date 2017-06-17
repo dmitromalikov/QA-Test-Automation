@@ -1,11 +1,6 @@
 package preIntermediate;
 
 public class Task4 {
-	public static void showArray(int[] ar){
-		for(int element : ar)
-			System.out.print(element + " ");
-			System.out.println();
-		 }
 	public void secondHalf(int[] ar){
 		if (ar.length % 2 == 0) {
 		for (int i=ar.length/2; i < ar.length; i++) {
@@ -21,9 +16,10 @@ public class Task4 {
 		int[] ar = new int[] {5,7,98,3,6,11,54,22,73};
 		System.out.println("Given an array of integers. Write a method which prints the second half of the array.\n"
 			+ "Include the middle element to output, if the array has odd number of elements.");
+        System.out.println("======================= Solution ==============================");
 		Task4 One = new Task4();
 		System.out.println("Initial array of integers:");
-		One.showArray(ar);		
+		beginner.Task1.showArray(ar);		
 		System.out.println("Second half of the array:");
 		One.secondHalf(ar);
 	}

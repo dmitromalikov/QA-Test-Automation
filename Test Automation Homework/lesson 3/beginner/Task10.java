@@ -30,6 +30,7 @@ public class Task10 {
 			+ "***\n"
 			+ "**\n"
 			+ "*\n");
+	        System.out.println("======================= Solution ==============================");
 			Task10 One = new Task10();
 	System.out.println("Text = " + s);	
 	System.out.println("Number = " + n);

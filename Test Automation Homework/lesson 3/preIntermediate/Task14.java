@@ -24,6 +24,7 @@ public class Task14 {
 			+ "   e\n"
 			+ "      s\n"
 			+ "         t\n");
+    System.out.println("======================= Solution ==============================");
 	Task14 One = new Task14();
 	System.out.println("Input: " + text);
 	System.out.println("Output:");

@@ -6,6 +6,7 @@ public class Task5 {
 		System.out.println("There are several marks in the school: from 1 to 5 (the highest).\n"
 				+ "Create a method (program) which takes a mark and return your result (for ex. Excellent, Good, Failed3 etc.).\n"
 						+ "Please do not use if...else condition");
+        System.out.println("======================= Solution ==============================");
 		Scanner in = new Scanner(System.in);
 		System.out.println("Please enter the your mark (from 1 to 5):");
 		int x = in.nextInt();

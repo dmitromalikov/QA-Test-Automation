@@ -2,7 +2,6 @@ package beginner;
 
 public class Task1 {
 
-	int 
 public int[] newArray(int [] numbers, int factor){
 	int [] newArray = new int [numbers.length];
 	for (int i = 0; i < numbers.length; i++){
@@ -10,7 +9,7 @@ public int[] newArray(int [] numbers, int factor){
 		}
 return newArray;
 	}
-public void showArray(int[] numbers){
+public static void showArray(int[] numbers){
 	for(int element: numbers)
 		System.out.print(element + " ");
 		System.out.println();

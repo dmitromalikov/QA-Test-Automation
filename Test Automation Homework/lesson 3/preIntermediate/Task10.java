@@ -2,10 +2,6 @@ package preIntermediate;
 
 public class Task10 {
 	
-	public void showArray (int [] arrayGreatest9){
-		for(int i = 0; i < arrayGreatest9.length; i++)
-			System.out.print(arrayGreatest9[i] + " ");
-		}
 	public int [] findMaxSum (int [] ar){
 		int[] arrayGreatest9 = new int[9];
 		int maxResult = 0;
@@ -68,6 +64,7 @@ public class Task10 {
 				+ "Find the nine adjacent digits in the 1000-digit number that have the greatest product.\n"
 				+ "What is the value of this product?\n"
 				+ " ");
+        System.out.println("======================= Solution ==============================");
 		int[] ar = new int[] {7,3,1,6,7,1,7,6,5,3,1,3,3,0,6,2,4,9,1,9,2,2,5,1,1,9,6,7,4,4,2,6,5,7,4,7,4,2,3,5,5,3,4,9,1,
 				9,4,9,3,4,9,6,9,8,3,5,2,0,3,1,2,7,7,4,5,0,6,3,2,6,2,3,9,5,7,8,3,1,8,0,1,6,9,8,4,8,0,1,8,6,9,4,7,8,8,5,1,
 				8,4,3,8,5,8,6,1,5,6,0,7,8,9,1,1,2,9,4,9,4,9,5,4,5,9,5,0,1,7,3,7,9,5,8,3,3,1,9,5,2,8,5,3,2,0,8,8,0,5,5,1,
@@ -90,7 +87,7 @@ public class Task10 {
 				3,2,5,7,5,3,0,4,2,0,7,5,2,9,6,3,4,5,0};
 		Task10 One = new Task10();
 		System.out.println("The greatest product is");
-		One.showArray(One.findMaxSum(ar));
+		beginner.Task1.showArray((One.findMaxSum(ar)));
 		System.out.println("Sum = " + One.maxSum(ar));
 		
 	}

@@ -8,6 +8,7 @@ public class Task9 {
 	}
 	public static void main (String[] args){
 		System.out.println("Write a method which prints multiplication table for the input number.");
+        System.out.println("======================= Solution ==============================");
 		Task9 One = new Task9();
 		int n = 7;
 		System.out.println("The multiplication table for the number - " + n);

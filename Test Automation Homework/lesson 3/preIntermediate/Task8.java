@@ -7,6 +7,7 @@ public class Task8 {
 	long n4 = 0;
 	long sum = 1;
 	int count = 1;
+	
 	public long sumOddFibonacci(long n1, long n2, int m){
 	while (count < m){
 		n3 = n1 + n2;
@@ -21,6 +22,7 @@ public class Task8 {
 	}
 	public static void main (String[] args){
 	System.out.println("Write a method which calculates a sum of first 100 odd elements of Fibonacci sequence.");
+    System.out.println("======================= Solution ==============================");
 	Task8 One = new Task8();
 	System.out.println("Sum of first 100 odd elements of Fibonacci sequence is " + One.sumOddFibonacci(1, 1, 100));
 }

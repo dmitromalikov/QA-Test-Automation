@@ -1,13 +1,11 @@
 package preIntermediate;
 
-import java.util.Scanner;
 public class Task1 {
-	public static boolean visitCinema;
 	public boolean visitCinema (boolean sheSmile, boolean heSmile){
 		if (sheSmile == heSmile) {
-			return visitCinema = true;
+			return true;
 		}
-		else return visitCinema = false;
+		else return false;
 	}
 	public static void main (String[] args){
 		System.out.println("A couple is going to go to the cinema. That's makes sense, if both of them have the same mood.\n"
@@ -16,6 +14,7 @@ public class Task1 {
 				+ "visitCinema(true, true) -> true\n"
 				+ "visitCinema(false, false) -> true\n"
 				+ "visitCinema(true, false) -> false\n");
+        System.out.println("======================= Solution ==============================");
 	boolean sheSmile = true;
 	boolean heSmile = true;
 	System.out.println("Wife's mood is - " + sheSmile);

@@ -14,6 +14,7 @@ public class Task6way1 {
 	public static void main (String[] args){
 		System.out.println("Print all even numbers from range (0..50). Try to solve this in more than one way.\n"
 				+ "Way 1.");
+        System.out.println("======================= Solution ==============================");
 		Task6way1 One = new Task6way1();
 		One.printNumbers();
 	}

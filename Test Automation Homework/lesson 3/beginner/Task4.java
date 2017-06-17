@@ -22,6 +22,7 @@ public class Task4 {
 		Task4 One = new Task4();
 		System.out.println("Given an array of integers. Create a method (program) which takes two arguments - this array and number \n"
 				+ "that you are looking for - and returns quantity of this number in the array.");
+        System.out.println("======================= Solution ==============================");
 		System.out.print("Initial array is ");
 		One.showNewArray(numbers);
 		System.out.println("Number to search = " + n);
