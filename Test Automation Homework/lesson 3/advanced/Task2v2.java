@@ -22,7 +22,7 @@ static {
 	map.put(1, "I");
 }
 	
-public static String intToRoman(int num) {
+public String intToRoman(int num) {
 	StringBuilder roman = new StringBuilder("");
 	for (Integer i : map.keySet()) {
 		for (int j = 1; j <= num / i; j++) {
@@ -35,11 +35,12 @@ public static String intToRoman(int num) {
 	
 	public static void main (String[] args){
 		int x = 2003;
+        Task2v2 objectOne = new Task2v2();
 		System.out.println("Years converter.\n"
 				+ "Write a program which takes Arabic numerals in range (0..2015) and returns their Romanian analogue.\n"
 				+ "Do not create dual converter, just Arabic > Romanian.");
         System.out.println("======================= Solution ==============================");
         System.out.println("Initial Arabic year = " + x);
-		System.out.println("Romanian year = " + intToRoman(x));
+		System.out.println("Romanian year = " + objectOne.intToRoman(x));
 		}
 }
