@@ -1,6 +1,7 @@
 package advanced;
 
 public class Task1v2 {
+	
 
 	static int randomNum(int min, int max) {
 		max -= min;

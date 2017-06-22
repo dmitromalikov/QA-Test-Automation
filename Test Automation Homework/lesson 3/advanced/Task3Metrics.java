@@ -11,6 +11,7 @@ public class Task3Metrics {
 	if (percentageOfFailedTc >= 20 | numberOfUnresolvedIssuesHigh >= 10 | numberOfUnresolvedIssuesBlocker >= 5 | numberOfUnresolvedIssuesCritical >= 5){
 		return false;
 	}
+	
 	else return true;
 	}
 */

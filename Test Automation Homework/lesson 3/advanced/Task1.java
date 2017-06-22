@@ -1,7 +1,5 @@
 package advanced;
 
-import java.util.Random;
-
 public class Task1 {
 
 	static private String [] data = {"q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "a",

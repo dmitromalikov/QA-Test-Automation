@@ -8,7 +8,7 @@ public class Task3 {
 	static int numberOfUnresolvedIssuesBlocker;     // OR max 5
 	static int numberOfUnresolvedIssuesCritical;    // OR max 5
 	
-	public void enterData (){
+	public void enterData () {
 		Scanner in = new Scanner(System.in);
 		System.out.println("Please enter the passed number of test cases: ");
 		passedTc = in.nextInt();

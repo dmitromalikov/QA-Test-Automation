@@ -1,7 +1,5 @@
 package advanced;
 
-// map flor key рекурсия
-
 public class Task2 {
 	
 	public boolean isValidArabic(int x) {
