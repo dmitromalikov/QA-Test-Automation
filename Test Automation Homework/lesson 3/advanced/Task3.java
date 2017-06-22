@@ -47,12 +47,19 @@ public class Task3 {
         System.out.println("======================= Solution ==============================");
 		Task3 One = new Task3();
 		One.enterData();
-		if (advanced.Task3Metrics.isStable(passedTc, failedTc, 
+/*		if (advanced.Task3Metrics.isStable(passedTc, failedTc, 
 				numberOfUnresolvedIssuesHigh, numberOfUnresolvedIssuesBlocker, numberOfUnresolvedIssuesCritical) == true) {
 			System.out.println("The system is stable.");
 		}
+*/		
+		advanced.Task3Metrics.checkForStable(passedTc, failedTc, numberOfUnresolvedIssuesHigh, numberOfUnresolvedIssuesBlocker, numberOfUnresolvedIssuesCritical);
+		if (advanced.Task3Metrics.isStable == true){
+			System.out.println("The system is stable.");			
+		}
 		else {
-			advanced.Task3Metrics.showAdditionalExplanationForTestManager();
+//			advanced.Task3Metrics.showAdditionalExplanationForTestManager();
+			System.out.println(advanced.Task3Metrics.errorMessage);
+			
 		}
 	}
 }
