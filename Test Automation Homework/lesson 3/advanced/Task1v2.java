@@ -3,12 +3,12 @@ package advanced;
 public class Task1v2 {
 	
 
-	static int randomNum(int min, int max) {
+	int randomNum(int min, int max) {
 		max -= min;
 		return (int) (Math.random() * ++max) + min;
 	}
 	
-	static public int [] createMask () {
+	public int [] createMask () {
 		boolean validMask = false, nullMask = false, oneMask = false, twoMask = false;
 		int lengthPassword = randomNum (8, 15);
 //		System.out.println(lengthPassword);
@@ -37,7 +37,7 @@ public class Task1v2 {
 		return maskArray;
 	}
 	
-	static public char[] createPassword (int [] maskArray) {
+	public char[] createPassword (int [] maskArray) {
 		char [] passwordArray = new char [maskArray.length];
 		for (int i = 0; i < maskArray.length; i++) {
 			if (maskArray [i] == 0) {
@@ -65,9 +65,11 @@ public class Task1v2 {
         		+ "Choose the max length of password within reasonable limits (for ex. set mas password's length = 15).");
         System.out.println("======================= Solution ==============================");
 		
+        Task1v2 objectOne = new Task1v2();
+        
 //		createMask();
 //		System.out.println(Arrays.toString(createMask()));
-		System.out.println(createPassword(createMask()));
+		System.out.println(objectOne.createPassword(objectOne.createMask()));
 		
 	}
 }
